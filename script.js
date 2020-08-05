@@ -9,6 +9,7 @@ function getSrc() {
 
             document.getElementById("frameVideo").src = "https://www.youtube.com/embed/" + srcText;
             document.getElementById("videoText").innerText = titleText;
+            document.getElementById("countText").innerText = list[rndNumber].id + " / " + list.length;
         }
     };
     xhttp.open("GET", "https://raw.githubusercontent.com/stranlist/data/master/list.json", true);
