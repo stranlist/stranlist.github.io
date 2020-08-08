@@ -7,6 +7,7 @@ function getSrc() {
             let srcText = list[rndNumber].code;
             let titleText = list[rndNumber].title;
 
+            document.getElementById("frameVideo").src = "";
             document.getElementById("frameVideo").src = "https://www.youtube.com/embed/" + srcText;
             document.getElementById("videoText").innerText = titleText;
             document.getElementById("countText").innerText = list[rndNumber].id + " / " + list.length;
